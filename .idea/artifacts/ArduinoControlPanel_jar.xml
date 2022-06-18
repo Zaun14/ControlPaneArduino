@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ArduinoControlPanel:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ArduinoControlPanel_jar</output-path>
+    <root id="archive" name="ArduinoControlPanel.jar">
+      <element id="module-output" name="ArduinoControlPanel" />
+      <element id="file-copy" path="$PROJECT_DIR$/pingArduino.bat" />
+      <element id="dir-copy" path="$PROJECT_DIR$/res" />
+    </root>
+  </artifact>
+</component>
