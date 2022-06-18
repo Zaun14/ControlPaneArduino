@@ -4,7 +4,7 @@ import javax.swing.*;
 
 public class MainGUI extends JFrame {
 
-    private Config con;
+    private final Config con;
 
     public MainGUI(){
         //Create config
@@ -13,7 +13,7 @@ public class MainGUI extends JFrame {
 
     public  String getIpFromUser() {
         String ip = JOptionPane.showInputDialog(this, "Write IP ESP8266", "IP", JOptionPane.QUESTION_MESSAGE);
-        if (ip != null && ip != "") return ip;
+        if (ip != null && !ip.equals("")) return ip;
         ip = getIpFromUser();
         return ip;
     }
