@@ -13,16 +13,16 @@ public class FileReader {
         this.path = path;
     }
 
-    public static void read(){
+    public static Settings read(){
         File file = new File(path);
         //Check existe file. if exists continue work else break function
-        if(!file.exists()) return;
+        if(!file.exists()) return null;
         try {
             ObjectInputStream read = new ObjectInputStream(new FileInputStream(file));
-            Main.setSet((Settings) read.readObject());
+            return ((Settings) read.readObject());
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
         }
-
+        return null;
     }
 }

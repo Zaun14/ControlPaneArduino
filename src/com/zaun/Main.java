@@ -20,15 +20,15 @@ public class Main {
         //init object
         writer = new FileWriter(path);
         reader = new FileReader(path);
-        set = new Settings();
         //read ip if file exists
-        reader.read();
+        Settings settings =  reader.read();
+        //catch if
+        if (settings == null) set = new Settings();
         //init window
-
         win = new MainGUI();
         //Get from user ip if ip == ""
         if (Objects.equals(set.getIP().trim(), ""))set.setIP( win.getIpFromUser());
-        //Visible window
+        //set visible window
         win.setVisible(true);
         //create procces pingArduino.bat
         try {

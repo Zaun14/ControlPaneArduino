@@ -11,9 +11,9 @@ public class MainGUI extends JFrame {
         con = new Config(this);
     }
 
-    public  String getIpFromUser() {
+    public String getIpFromUser() {
         String ip = JOptionPane.showInputDialog(this, "Write IP ESP8266", "IP", JOptionPane.QUESTION_MESSAGE);
-        if (ip != null && !ip.equals("")) return ip;
+        if (ip != null && !ip.equals("") ) return null;
         ip = getIpFromUser();
         return ip;
     }
