@@ -8,7 +8,7 @@ public class MainGUI extends JFrame {
 
     public MainGUI(){
         //Create config
-        con = new Config();
+        con = new Config(this);
     }
 
     public  String getIpFromUser() {
@@ -17,6 +17,7 @@ public class MainGUI extends JFrame {
         ip = getIpFromUser();
         return ip;
     }
+
     public  Config getCon() {
         return con;
     }
