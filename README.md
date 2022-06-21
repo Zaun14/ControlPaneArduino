@@ -1,5 +1,5 @@
 # ControlPaneArduino
-This project don't hard.
+This project is not complicated.
 ## Why the project exits!
 This is project only for me.
 ## What happened with the project!
