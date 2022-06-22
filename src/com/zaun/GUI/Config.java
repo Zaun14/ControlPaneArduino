@@ -1,7 +1,6 @@
 package com.zaun.GUI;
 
 import com.zaun.Main;
-
 import javax.swing.*;
 import java.awt.*;
 import java.util.HashMap;

@@ -7,7 +7,11 @@ public class Settings implements Serializable {
     private String IP = "";
     private int sizeWindowProccent = 60;
 
-   public String getIP() {
+    public Settings(){
+
+    }
+
+    public String getIP() {
         return IP;
     }
     public int getSizeWindowProccent() {

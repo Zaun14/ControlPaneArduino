@@ -21,13 +21,13 @@ public class Main {
         writer = new FileWriter(path);
         reader = new FileReader(path);
         //read ip if file exists
-         set =  reader.read();
+        set =  reader.read();
         //catch if
         if (set == null) set = new Settings();
         //init window
         win = new MainGUI();
         //Get from user ip if ip == ""
-        if (Objects.equals(set.getIP().trim(), ""))set.setIP( win.getIpFromUser());
+        if (Objects.equals(set.getIP().trim(), ""))set.setIP(win.getIpFromUser());
         //set visible window
         win.setVisible(true);
         //create procces pingArduino.bat
