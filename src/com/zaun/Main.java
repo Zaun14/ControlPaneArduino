@@ -21,9 +21,9 @@ public class Main {
         writer = new FileWriter(path);
         reader = new FileReader(path);
         //read ip if file exists
-        Settings settings =  reader.read();
+         set =  reader.read();
         //catch if
-        if (settings == null) set = new Settings();
+        if (set == null) set = new Settings();
         //init window
         win = new MainGUI();
         //Get from user ip if ip == ""

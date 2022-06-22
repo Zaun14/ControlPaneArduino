@@ -10,13 +10,13 @@ public class Config {
 
     private static final Dimension SIZE = Toolkit.getDefaultToolkit().getScreenSize(); //Size display
     private static Recource res = new Recource();
-    private static JFrame win;
+    private static MainGUI win;
 
-    public Config(JFrame win) {
+    public Config(MainGUI win) {
         Config.win = win;
         init();
-        settings();
         setBounds();
+        settings();
     }
 
     private static void init(){

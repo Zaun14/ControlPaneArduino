@@ -1,5 +1,6 @@
 package com.zaun.connect;
 
+import com.zaun.GUI.MainGUI;
 import com.zaun.Main;
 import java.io.BufferedReader;
 import java.io.IOException;
