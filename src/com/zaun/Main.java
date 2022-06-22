@@ -41,9 +41,6 @@ public class Main {
     public static MainGUI getWin() {
         return win;
     }
-    public static void setSet(Settings set) {
-        Main.set = set;
-    }
     public static Settings getSet() {
         return set;
     }
