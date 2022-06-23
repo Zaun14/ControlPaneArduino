@@ -9,7 +9,7 @@ public class ArduinoConnect implements ChangeStatusArduino {
 
     public ArduinoConnect(){
         try {
-            Process p = Runtime.getRuntime().exec(new String[]{"pingArduino.bat"  , Main.getSet().getIP()});
+            Process p = Runtime.getRuntime().exec(new String[]{"res\\data\\pingArduino.bat"  , Main.getSet().getIP()});
             BufferedReader read = new BufferedReader(new InputStreamReader(p.getInputStream()));
             while (true) {
                 String msg = read.readLine();
