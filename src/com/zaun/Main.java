@@ -26,13 +26,14 @@ public class Main {
         if (set == null) set = new Settings();
         //init window
         win = new MainGUI();
-        //Get from user ip if ip == ""
+        //Get from user ip if ip from file == ""
         if (Objects.equals(set.getIP().trim(), ""))set.setIP(win.getIpFromUser());
         //set visible window
         win.setVisible(true);
         //create procces pingArduino.bat
         try {
             con = new ArduinoConnect();
+            new Thread(con).start();
         }catch (NullPointerException e){
             System.out.println(e);
         }
